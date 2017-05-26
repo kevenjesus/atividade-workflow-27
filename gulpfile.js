@@ -4,20 +4,20 @@ var rename = require('gulp-rename');
 
 
 /*
- * Variables
+ * Variaveis
  */
-// Sass Source
+// Fonte Sass
 var scssFiles = './Source/scss/style.scss';
 
-// CSS destination
+// Destino CSS 
 var cssDest = './dist/css';
 
-// Options for development
+// Opcoes para desenvolvedor
 var sassDevOptions = {
   outputStyle: 'expanded'
 }
 
-// Options for production
+// Opcoes para producao
 var sassProdOptions = {
   outputStyle: 'compressed'
 }
