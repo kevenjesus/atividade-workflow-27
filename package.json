@@ -1,0 +1,14 @@
+{
+  "name": "Workflow",
+  "version": "1.0.0",
+  "description": "Atividade Workflow",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henrique Olivetti",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
