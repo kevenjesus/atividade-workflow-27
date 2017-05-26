@@ -9,8 +9,13 @@ var rename = require('gulp-rename');
 // Fonte Sass
 var scssFiles = './Source/scss/style.scss';
 
+
 // Destino CSS 
 var cssDest = './dist/css';
+
+// Destino Index - MINHA LINHA
+var indexDest = './dist';
+
 
 // Opcoes para desenvolvedor
 var sassDevOptions = {
@@ -30,6 +35,7 @@ var sassProdOptions = {
 gulp.task('sassdev', function() {
   return gulp.src(scssFiles)
     .pipe(sass(sassDevOptions).on('error', sass.logError))
+    .pipe(gulp.dest(indexDest))
     .pipe(gulp.dest(cssDest));
 });
 
@@ -38,6 +44,8 @@ gulp.task('sassprod', function() {
   return gulp.src(scssFiles)
     .pipe(sass(sassProdOptions).on('error', sass.logError))
     .pipe(rename('style.min.css'))
+    .pipe(rename('index.min.html'))
+    .pipe(gulp.dest(indexDest))
     .pipe(gulp.dest(cssDest));
 });
 
