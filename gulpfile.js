@@ -7,7 +7,7 @@ var rename = require('gulp-rename');
  * Variaveis
  */
 // Fonte Sass
-var scssFiles = './Source/scss/style.scss';
+var scssFiles = './source/scss/style.scss';
 
 
 // Destino CSS 
