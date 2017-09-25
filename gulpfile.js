@@ -52,5 +52,5 @@ gulp.task('watch', function() {
 });
 
 // Default task - Run with command 'gulp'
-gulp.task('default', ['sassdev', 'sassprod', 'watch']);
+gulp.task('default', ['sassdev', 'watch']);
 
