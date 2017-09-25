@@ -35,7 +35,6 @@ var sassProdOptions = {
 gulp.task('sassdev', function() {
   return gulp.src(scssFiles)
     .pipe(sass(sassDevOptions).on('error', sass.logError))
-    .pipe(gulp.dest(indexDest))
     .pipe(gulp.dest(cssDest));
 });
 
@@ -44,8 +43,6 @@ gulp.task('sassprod', function() {
   return gulp.src(scssFiles)
     .pipe(sass(sassProdOptions).on('error', sass.logError))
     .pipe(rename('style.min.css'))
-    .pipe(rename('index.min.html'))
-    .pipe(gulp.dest(indexDest))
     .pipe(gulp.dest(cssDest));
 });
 
