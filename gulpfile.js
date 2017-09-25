@@ -48,7 +48,7 @@ gulp.task('sassprod', function() {
 
 // Task 'watch' - Run with command 'gulp watch'
 gulp.task('watch', function() {
-  gulp.watch(scssFiles, ['sassdev', 'sassprod']);
+  gulp.watch(scssFiles, ['sassdev']);
 });
 
 // Default task - Run with command 'gulp'
